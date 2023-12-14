@@ -6,7 +6,6 @@ import { Clients } from "../components/sections/clients";
 import { EnjoyIssueTracking } from "../components/sections/enjoy-issue-tracking";
 import { HomePageHero } from "../components/sections/homepage-hero";
 import { MainFeaturesGrid } from "../components/sections/main-features-grid";
-import { SetDirection } from "../components/sections/set-direction";
 
 export default function Homepage() {
   return (
@@ -31,7 +30,6 @@ export default function Homepage() {
       <MainFeaturesGrid />
       <EnjoyIssueTracking />
       <BuildMomentum />
-      <SetDirection />
     </>
   );
 }

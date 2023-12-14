@@ -32,8 +32,8 @@ export const Header = () => {
   return (
     <header className="fixed top-0 left-0 z-10 w-full border-b border-transparent-white backdrop-blur-[12px]">
       <Container className="flex h-navigation-height">
-        <Link href="/" className="flex items-center text-lg">
-          <Logo className="mr-4 h-[1.8rem] w-[1.8rem]" /> Linear
+        <Link href="/" className="flex items-center text-lg logo-text">
+          HERMES
         </Link>
         <div
           className={classNames(
@@ -52,43 +52,32 @@ export const Header = () => {
             <ul
               className={classNames(
                 "flex h-full flex-col md:flex-row md:items-center [&_li]:ml-6 [&_li]:border-b [&_li]:border-grey-dark md:[&_li]:border-none",
-                 "ease-in [&_a:hover]:text-grey [&_a]:flex [&_a]:h-navigation-height [&_a]:w-full [&_a]:translate-y-8 [&_a]:items-center [&_a]:text-lg [&_a]:transition-[color,transform] [&_a]:duration-300 md:[&_a]:translate-y-0 md:[&_a]:text-sm [&_a]:md:transition-colors",
+                "ease-in [&_a:hover]:text-grey [&_a]:flex [&_a]:h-navigation-height [&_a]:w-full [&_a]:translate-y-8 [&_a]:items-center [&_a]:text-lg [&_a]:transition-[color,transform] [&_a]:duration-300 md:[&_a]:translate-y-0 md:[&_a]:text-sm [&_a]:md:transition-colors",
                 hamburgerMenuIsOpen && "[&_a]:translate-y-0"
               )}
             >
               <li>
-                <Link href="/">Features</Link>
+                <Link href="#what_we_do">What We Do</Link>
               </li>
               <li>
-                <Link href="/">Method</Link>
+                <Link href="#customers">Customers</Link>
               </li>
+
+
               <li className="md:hidden lg:block">
-                <Link href="/">Customers</Link>
+                <Link href="#about">About</Link>
               </li>
+
               <li className="md:hidden lg:block">
-                <Link href="/">Changelog</Link>
+                <Link href="#contact">Get In Touch</Link>
               </li>
-              <li className="md:hidden lg:block">
-                <Link href="/">Integrations</Link>
-              </li>
-              <li>
-                <Link href="/">Pricing</Link>
-              </li>
-              <li>
-                <Link href="/">Company</Link>
-              </li>
+
+
             </ul>
           </nav>
         </div>
 
-        <div className="ml-auto flex h-full items-center">
-          <Link href="/" className="mr-6 text-sm">
-            Log in
-          </Link>
-          <Button href="#" variant="primary" size="medium">
-            Sign up
-          </Button>
-        </div>
+
         <button
           className="ml-6 md:hidden"
           onClick={() => setHamburgerMenuIsOpen((open) => !open)}

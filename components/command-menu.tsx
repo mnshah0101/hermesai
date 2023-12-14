@@ -22,42 +22,39 @@ import {
 
 const commandOptions = [
   {
-    label: "Assign to..",
+    label: "Highest Performing Employees",
     icon: AssignToIcon,
     subOptions: [
-      { label: "Jori", icon: PersonIcon },
-      { label: "Karri", icon: PersonIcon },
-      { label: "Tuomas", icon: PersonIcon },
+      { label: "Jori - $83,000", icon: PersonIcon },
+      { label: "Karri - $75,000", icon: PersonIcon },
+      { label: "Tuomas - $71,400", icon: PersonIcon },
     ],
   },
   {
-    label: "Change status...",
+    label: "Initiatives",
     icon: ChangeStatusIcon,
     subOptions: [
-      { label: "Backlog", icon: BacklogIcon },
-      { label: "Todo", icon: TodoIcon },
-      { label: "In Progress", icon: InProgressIcon },
-      { label: "Done", icon: DoneIcon },
+      { label: "Higher SEO Ranking", icon: BacklogIcon },
+      { label: "Utilize Social Media", icon: TodoIcon },
+      { label: "Increase Awareness at Farmers Markets", icon: InProgressIcon },
     ],
   },
   {
-    label: "Change priority...",
+    label: "Ordering",
     icon: ChangePriorityIcon,
     subOptions: [
-      { label: "No priority", icon: NoPriorityIcon },
-      { label: "Urgent", icon: UrgentIcon },
-      { label: "High", icon: HighIcon },
-      { label: "Medium", icon: MediumIcon },
-      { label: "Low", icon: LowIcon },
+      { label: "Less Beef in Inventory", icon: UrgentIcon },
+      { label: "Increase Tomatoes", icon: NoPriorityIcon },
+      { label: "Increase Pasta", icon: MediumIcon }
     ],
   },
   {
-    label: "Add labels...",
+    label: "Highest Performing Products",
     icon: AddLabels,
     subOptions: [
-      { label: "Bug", icon: () => <LabelIcon type="bug" /> },
-      { label: "Feature", icon: () => <LabelIcon type="feature" /> },
-      { label: "Improvement", icon: () => <LabelIcon type="improvement" /> },
+      { label: "Spicy Thai Green Curry", icon: () => <LabelIcon type="bug" /> },
+      { label: "Moroccan Chickpea Tagine", icon: () => <LabelIcon type="feature" /> },
+      { label: "Creamy Tuscan Chicken", icon: () => <LabelIcon type="improvement" /> },
     ],
   },
 ] as const;
@@ -124,10 +121,10 @@ export const CommandMenu = () => {
         )}
       >
         <span className="ml-4 mt-2 bg-white/[0.05] px-2 text-xs leading-10 text-white/50">
-          LIN-111 Walkway lightning
+          Suggested Business Decisions
         </span>
         <input
-          placeholder="Type a command or search..."
+          placeholder="Search for recommendations"
           className="w-full bg-transparent p-5 text-lg outline-none"
           value={searchValue}
           onChange={(ev) => setSearchValue(ev.target.value)}

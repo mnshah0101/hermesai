@@ -5,7 +5,7 @@ export const Logo = ({ className }: { className?: string }) => (
     viewBox="0 0 64 64"
     fill="#EEEFFC"
     color="#EEEFFC"
-    aria-label="Linear Logotype"
+    aria-label="Hermes Logotype"
     className={className}
   >
     <path d="M0.403013 37.3991L26.6009 63.597C13.2225 61.3356 2.66442 50.7775 0.403013 37.3991Z"></path>

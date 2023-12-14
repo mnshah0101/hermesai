@@ -7,42 +7,27 @@ import { TwitterIcon } from "./icons/twitter";
 
 const footerLinks = [
   {
-    title: "Product",
+    title: "",
     links: [
-      { title: "Features", href: "#" },
-      { title: "Integrations", href: "#" },
-      { title: "Pricing", href: "#" },
-      { title: "Changelog", href: "#" },
-      { title: "Docs", href: "#" },
-      { title: "Linear Method", href: "#" },
-      { title: "Download", href: "#" },
+
     ],
   },
   {
-    title: "Company",
+    title: "",
     links: [
-      { title: "About us", href: "#" },
-      { title: "Blog", href: "#" },
-      { title: "Careers", href: "#" },
-      { title: "Customers", href: "#" },
-      { title: "Brand", href: "#" },
+
     ],
   },
   {
-    title: "Resources",
+    title: "",
     links: [
-      { title: "Community", href: "#" },
-      { title: "Contact", href: "#" },
-      { title: "DPA", href: "#" },
-      { title: "Terms of service", href: "#" },
+
     ],
   },
   {
-    title: "Developers",
+    title: "",
     links: [
-      { title: "API", href: "#" },
-      { title: "Status", href: "#" },
-      { title: "GitHub", href: "#" },
+
     ],
   },
 ];
@@ -52,13 +37,11 @@ export const Footer = () => (
     <Container className="flex flex-col justify-between md:flex-row">
       <div>
         <div className="flex h-full flex-row justify-between lg:flex-col">
-          <div className="flex items-center text-grey">
-            <Logo className="mr-4 h-4 w-4" /> Linear - Designed Worldwide
+          <div className="flex items-center text-grey logo-text">
+            <Logo className="mr-4 h-4 w-4 logo-text" /> HERMES
           </div>
           <div className="mt-auto flex space-x-4 text-grey">
-            <TwitterIcon />
-            <GithubIcon />
-            <SlackIcon />
+
           </div>
         </div>
       </div>
@@ -70,10 +53,12 @@ export const Footer = () => (
               {column.links.map((link) => (
                 <li className="[&_a]:last:mb-0">
                   <Link
-                    href={link.href}
+                    href={''}
                     className="mb-3 block text-grey transition-colors hover:text-off-white"
                   >
-                    {link.title}
+                    {
+                      ''
+                    }
                   </Link>
                 </li>
               ))}

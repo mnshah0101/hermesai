@@ -4,19 +4,19 @@ import { Button, Highlight } from "./button";
 import { KeyboardIllustration } from "./illustrations/keyboard";
 
 const shortcuts = [
-  { text: "Opens command line", keys: "⌘k" },
-  { text: "Assign issue to me", keys: "i" }, 
-  { text: "Assign issue to", keys: "a" },
-  { text: "Change issue status", keys: "s" },
-  { text: "Set issue priority", keys: "p" },
-  { text: "Add issue labels", keys: "l" },
-  { text: "Set due date", keys: "⇧d" },
-  { text: "Set parent issue", keys: "⇧⌘p" },
-  { text: "Add sub-issue", keys: "⇧⌘o" },
-  { text: "Create new issue", keys: "c" },
-  { text: "Create new issue from template", keys: "⌥c" },
-  { text: "Move to project", keys: "⇧p" },
+  { text: "Opens command line", keys: "" },
+  { text: "Assign issue to me", keys: "hello" },
+  { text: "Assign issue to", keys: "welcome" },
+  { text: "Change issue status", keys: "to" },
+  { text: "Set issue priority", keys: "hermes" },
+  { text: "Add issue labels", keys: "dev" },
+  { text: "Set due date", keys: "we" },
+  { text: "Set parent issue", keys: "make" },
+  { text: "Add sub-issue", keys: "custom" },
+  { text: "Create new issue", keys: "ai" },
+  { text: "Create new issue from template", keys: "solutions" }
 ];
+
 
 export const KeyboardShortcuts = () => {
   const wrapperRef = useRef<HTMLDivElement>(null);
@@ -89,15 +89,14 @@ export const KeyboardShortcuts = () => {
         >
           {shortcuts.map((shortcut, index) => (
             <Button
-              className="shrink-0 snap-center first:ml-[50vw] last:mr-[50vw]"
+              className="shrink-0 snap-center first:ml-[50vw] last:mr-[50vw] hide-button"
               key={shortcut.text}
               data-index={index}
               data-keys={shortcut.keys}
               onClick={onShortcutButtonClick}
               variant="secondary"
             >
-              <Highlight className="uppercase">{shortcut.keys}</Highlight>
-              <span>{shortcut.text}</span>
+
             </Button>
           ))}
         </div>
