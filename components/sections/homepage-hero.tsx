@@ -11,7 +11,7 @@ export const HomePageHero = () => (
       variant="secondary"
       size="small"
     >
-      <span>Hermes 2024 Release - Built for small business</span>{" "}
+      <span>Built for small business</span>{" "}
       <Highlight>→</Highlight>
     </Button>
     <HeroTitle className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
