@@ -1,10 +1,10 @@
 export default function Head() {
   return (
     <>
-      <title>Hermes AI</title>
       <meta
         name="description"
         content="AI Software Solutions for Small Businesses."
+        title="Hermes Group"
       />
       <meta name="robots" content="noindex" />
     </>

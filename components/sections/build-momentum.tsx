@@ -20,8 +20,8 @@ export const BuildMomentum = () => {
             </>
           }
           image=""
-          imageSize="large"
-          text="Reach by us by email at hermesdevelopergroup@gmail.com"
+          imageSize="small"
+          text="Email us @ hermesdevelopergroup@gmail.com"
         />
         <Features.Grid
           features={[

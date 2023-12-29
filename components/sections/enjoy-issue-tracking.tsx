@@ -72,7 +72,7 @@ export const EnjoyIssueTracking = () => {
               image: "",
               imageClassName: "",
               title: "Who We Are",
-              text:  "  Our team consists of driven students from varied academic backgrounds, which enables us to approach AI from multiple perspectives, including computer science, data analysis, software development, and business strategy. We firmly believe that the future belongs to those who can effectively harness the power of artificial intelligence and we are dedicated to bridging the gap of understanding and application for businesses. We understand that one size does not fit all in terms of AI solutions. This is why we commit ourselves to understanding the unique needs, challenges, and objectives of each business we work with. With this understanding, we then apply our technical skills and knowledge to develop AI solutions specifically tailored to enhance their operation.",
+              text:  "Our team consists of driven students from varied academic backgrounds, which enables us to approach AI from multiple perspectives, including computer science, data analysis, software development, and business strategy. We firmly believe that the future belongs to those who can effectively harness the power of artificial intelligence and we are dedicated to bridging the gap of understanding and application for businesses. We understand that one size does not fit all in terms of AI solutions. This is why we commit ourselves to understanding the unique needs, challenges, and objectives of each business we work with. With this understanding, we then apply our technical skills and knowledge to develop AI solutions specifically tailored to enhance their operation.",
             }
           ]}
         />

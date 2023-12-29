@@ -67,9 +67,9 @@ const MainFeature = ({
         </Container>
       </div>
       <Container className="w-[78rem] max-w-[90%] text-center">
-        <p className="mx-auto my-16 text-2xl leading-tight text-white md:w-[80%] md:text-4xl">
-          {text}
-        </p>
+        <p className="mx-auto my-16 text-xs leading-tight text-white md:w-[80%] md:text-2xl lg:text-4xl">
+  {text}
+</p>
         <hr className="mb-[7.2rem] h-[1px] border-none bg-[linear-gradient(to_right,transparent,rgba(255,255,255,0.1)_50%,transparent)]" />
       </Container>
     </>
@@ -87,18 +87,16 @@ type FeatureGridProps = {
 const FeatureGrid = ({ features }: FeatureGridProps) => {
   return (
     <Container>
-      <div className="mb-16 grid w-full grid-cols-2 place-items-center gap-y-9 text-sm text-primary-text md:mb-[14rem] md:grid-cols-3 md:text-md">
-        {features.map(({ title, text, icon: Icon }) => (
-          <div
-            className="max-w-[25.6rem] [&_svg]:mb-[4px] [&_svg]:fill-white md:[&_svg]:mr-[6px] md:[&_svg]:mb-[2px] md:[&_svg]:inline"
-            key={title}
-          >
-            <Icon />
-            <span className="block text-white md:inline">{title}</span> {text}
-          </div>
-        ))}
+  <div className="mb-16 grid w-full h-full grid-cols-2 place-items-center gap-y-9 text-sm text-primary-text md:mb-36 md:grid-cols-3 md:text-md">
+    {features.map(({ title, text, icon: Icon }) => (
+      <div className="max-w-64 svg:mb-1 svg:fill-white md:svg:mr-1.5 md:svg:mb-0.5 md:svg:inline" key={title}>
+        <Icon />
+        <div className="text-white inline-block">{title}</div> 
+        <div>{text}</div>
       </div>
-    </Container>
+    ))}
+  </div>
+</Container>
   );
 };
 
@@ -119,7 +117,7 @@ type FeatureCardsProps = {
         {features.map(({ title, text, image, imageClassName }) => (
           <div
             key={title}
-            className="flex flex-col items-center justify-start relative aspect-[3/1] overflow-hidden rounded-[2.4rem] border border-transparent-white bg-[radial-gradient(ellipse_at_center,rgba(var(--feature-color),0.15),transparent)] py-6 px-8 before:pointer-events-none before:absolute before:inset-0 before:bg-glass-gradient md:rounded-[4.8rem] md:p-14"
+            className="flex flex-col items-center justify-start relative aspect-[2/1]  rounded-[2.4rem] border border-transparent-white bg-[radial-gradient(ellipse_at_center,rgba(var(--feature-color),0.15),transparent)] py-6 px-8 before:pointer-events-none before:absolute before:inset-0 before:bg-glass-gradient md:rounded-[4.8rem] md:p-14"
           >
             <h3 className="mb-2 text-2xl text-white">{title}</h3>
     <p className=" text-md text-primary-text indent-6 py-10">{text}</p>
