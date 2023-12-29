@@ -30,33 +30,33 @@ export const EnjoyIssueTracking = () => {
           features={[
             {
               icon: ParentSubIcon,
-              title: "E-commerce Platforms:",
-              text: "Chatbots for customer support, optimizing product recommendations, automating order processing, and enhancing the overall shopping experience.",
+              title: "E-commerce:",
+              text: "Optimize overall shopping experience.",
             },
             {
               icon: AutomatedBacklogIcon,
               title: "Healthcare Facilities:",
-              text: "AI-driven appointment scheduling systems, streamlining administrative tasks, and creating virtual health assistants for patient engagement.",
+              text: "Streamline administrative tasks.",
             },
             {
               icon: WorkflowsIcon,
               title: "Financial Institutions:",
-              text: "Fraud detection algorithms, automating routine banking processes, providing AI-driven financial advice, and enhancing customer service through chatbots.",
+              text: "Automate routine banking processes.",
             },
             {
               icon: CustomViewsIcon,
               title: "Manufacturing Companies:",
-              text: "Predictive maintenance models, optimizing supply chain processes, and deploying robotics process automation (RPA) for repetitive tasks in the manufacturing workflow.",
+              text: "Optimize supply chain processes.",
             },
             {
               icon: DiscussionIcon,
               title: "Travel and Hospitality",
-              text: "AI-powered travel recommendation engines, implementing chatbots for customer inquiries, optimizing pricing strategies, and automating booking processes.",
+              text: "AI travel recommendation engines.",
             },
             {
               icon: IssuesIcon,
               title: "Real Estate Agencies",
-              text: "Virtual property assistants, automating lead generation and follow-ups, implementing AI for property valuation, and enhancing customer interactions through chatbots.",
+              text: "Create virtual property assistants.",
             },
           ]}
         />
@@ -71,16 +71,9 @@ export const EnjoyIssueTracking = () => {
             {
               image: "",
               imageClassName: "",
-              title: "Moksh Shah",
-              text: "Moksh is a computer science student at Georgia Tech. He is passionate about web development and creating software solutions for small businesses.",
-            },
-            {
-              image: "",
-              imageClassName:
-                "",
-              title: "Ronit Jain",
-              text: "Ronit Jain is a EECS major at UC Berkeley. He is passionate about AI and its applications in the real world. He has experience in building chatbots, computer vision, and NLP.",
-            },
+              title: "Who We Are",
+              text:  "  Our team consists of driven students from varied academic backgrounds, which enables us to approach AI from multiple perspectives, including computer science, data analysis, software development, and business strategy. We firmly believe that the future belongs to those who can effectively harness the power of artificial intelligence and we are dedicated to bridging the gap of understanding and application for businesses. We understand that one size does not fit all in terms of AI solutions. This is why we commit ourselves to understanding the unique needs, challenges, and objectives of each business we work with. With this understanding, we then apply our technical skills and knowledge to develop AI solutions specifically tailored to enhance their operation.",
+            }
           ]}
         />
       </Features>

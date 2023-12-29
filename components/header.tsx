@@ -32,10 +32,7 @@ export const Header = () => {
   return (
     <header className="fixed top-0 left-0 z-10 w-full border-b border-transparent-white backdrop-blur-[12px]">
       <Container className="flex h-navigation-height">
-        <Link href="/" className="flex items-center text-lg logo-text">
-          HERMES
-        </Link>
-        <div
+<img src="logos/white_hermes_text.png" />        <div
           className={classNames(
             "transition-[visibility] md:visible",
             hamburgerMenuIsOpen ? "visible" : "delay-500 invisible"

@@ -111,19 +111,20 @@ type FeatureCardsProps = {
   }[];
 };
 
-const FeatureCards = ({ features }: FeatureCardsProps) => {
+
+   const FeatureCards = ({ features }: FeatureCardsProps) => {
   return (
     <Container>
-      <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
+      <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-1">
         {features.map(({ title, text, image, imageClassName }) => (
           <div
             key={title}
-            className="relative aspect-[1.1/1] overflow-hidden rounded-[2.4rem] border border-transparent-white bg-[radial-gradient(ellipse_at_center,rgba(var(--feature-color),0.15),transparent)] py-6 px-8 before:pointer-events-none before:absolute before:inset-0 before:bg-glass-gradient md:rounded-[4.8rem] md:p-14"
+            className="flex flex-col items-center justify-start relative aspect-[3/1] overflow-hidden rounded-[2.4rem] border border-transparent-white bg-[radial-gradient(ellipse_at_center,rgba(var(--feature-color),0.15),transparent)] py-6 px-8 before:pointer-events-none before:absolute before:inset-0 before:bg-glass-gradient md:rounded-[4.8rem] md:p-14"
           >
             <h3 className="mb-2 text-2xl text-white">{title}</h3>
-            <p className="max-w-[31rem] text-md text-primary-text">{text}</p>
-            <img
-              className={classNames("absolute max-w-none", imageClassName)}
+    <p className=" text-md text-primary-text indent-6 py-10">{text}</p>
+                <img
+              className={classNames("max-w-none", imageClassName)}
               src={image}
             />
           </div>
@@ -131,7 +132,9 @@ const FeatureCards = ({ features }: FeatureCardsProps) => {
       </div>
     </Container>
   );
-};
+};  
+
+
 
 Features.Main = MainFeature;
 Features.Grid = FeatureGrid;

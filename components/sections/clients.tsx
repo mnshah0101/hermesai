@@ -17,21 +17,14 @@ export const Clients = () => (
       <span className="text-primary-text">
         Empowering businesses of every shape in size with AI.
       </span>
-      <br className="hidden md:block" />The Technologies We Use
+      <br className="hidden md:block" />Companies that trust Hermes Group.
     </p>
-    <div className="flex flex-wrap justify-around gap-x-6 gap-y-8 [&_svg]:max-w-[16rem] [&_svg]:basis-[calc(50%-12px)] md:[&_svg]:basis-[calc(16.66%-20px)]">
-      <RampLogo />
-      <LoomLogo className="hidden md:block" />
-      <VercelLogo />
-      <DescriptLogo className="hidden md:block" />
-      <CashAppLogo />
-      <RaycastLogo />
-      <MercuryLogo />
-      <RetoolLogo />
-      <AlanLogo className="hidden md:block" />
-      <ArcLogo className="hidden md:block" />
-      <OpenSeaLogo className="hidden md:block" />
-      <PitchLogo className="hidden md:block" />
-    </div>
+    <div className="flex  justify-around gap-x-6 gap-y-8">
+    <img src="logos/counsia.png" alt="" width="10%" className="object-contain h-auto" />
+    <img src="logos/opsm.png" alt="" width="10%" className="object-contain  h-auto" />
+            <img src="logos/fsva.png" alt="" width="10%" className="object-contain  h-auto" />
+    <img src="logos/opsmsoccer.png" alt="" width="10%" className="object-contain  h-auto" />
+
+</div>
   </>
 );

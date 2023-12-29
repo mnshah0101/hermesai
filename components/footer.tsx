@@ -38,7 +38,7 @@ export const Footer = () => (
       <div>
         <div className="flex h-full flex-row justify-between lg:flex-col">
           <div className="flex items-center text-grey logo-text">
-            <Logo className="mr-4 h-4 w-4 logo-text" /> HERMES
+            <Logo className="mr-4 h-4 w-4 logo-text" /> HERMES GROUP
           </div>
           <div className="mt-auto flex space-x-4 text-grey">
 
