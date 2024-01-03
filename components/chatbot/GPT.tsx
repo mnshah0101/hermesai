@@ -4,11 +4,11 @@ import OpenAI from 'openai';
 import dotenv from 'dotenv';
 dotenv.config();
 
-const key = process.env.REACT_APP_OPEN_AI_KEY;
+const key = process.env.OPENAI;
 
 
 const openai = new OpenAI({
-    apiKey: "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", dangerouslyAllowBrowser: true
+    apiKey: key
   
 });
 
