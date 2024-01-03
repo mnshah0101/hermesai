@@ -8,9 +8,10 @@ const key = process.env.REACT_APP_OPEN_AI_KEY;
 
 
 const openai = new OpenAI({
-    apiKey: "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", dangerouslyAllowBrowser: true
+    apiKey: "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", dangerouslyAllowBrowser: true
   
 });
+
 
 
 export default async function getResponse(message: any) {
@@ -21,8 +22,6 @@ const completion = await openai.chat.completions.create({
     max_tokens: 100,
   });    
 
+return {"role": "assistant", "content": completion.choices[0].message.content}
 
-
-
-  return completion.choices[0];
 }
