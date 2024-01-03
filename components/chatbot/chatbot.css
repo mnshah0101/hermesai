@@ -1,0 +1,65 @@
+.open_chatbot {
+  position: fixed;
+  bottom: 100px;
+  right: 40px;
+  transition: 0.5s;
+}
+
+@font-face {
+  font-family: "Anurati";
+  /*a name to be used later*/
+  src: url("/fonts/Anurati-Regular.otf");
+  /*URL to font*/
+}
+
+.react-chatbot-kit-chat-input-form {
+  color: black;
+}
+
+.react-chatbot-kit-chat-message-container {
+  background: linear-gradient(to bottom, #06081b, #0f0d2a);
+}
+
+.react-chatbot-kit-chat-bot-message {
+  background-color: #15152f;
+  font-family: "Roboto", sans-serif;
+}
+.react-chatbot-kit-chat-message-container {
+  font-family: "Roboto", sans-serif;
+}
+
+.react-chatbot-kit-chat-bot-message-arrow {
+  border-right-color: #15152f;
+}
+
+.react-chatbot-kit-chat-btn-send {
+  background-color: #15152f;
+}
+
+.react-chatbot-kit-chat-header {
+  font-family: "Anurati";
+  color: white;
+  background-color: #15152f;
+}
+
+.react-chatbot-kit-chat-container {
+  background-color: #15152f;
+}
+
+.react-chatbot-kit-chat-inner-container {
+  background-color: #15152f;
+}
+
+.chat_button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.close_chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  transition: 0.5s;
+}

@@ -6,6 +6,7 @@ import { Clients } from "../components/sections/clients";
 import { EnjoyIssueTracking } from "../components/sections/enjoy-issue-tracking";
 import { HomePageHero } from "../components/sections/homepage-hero";
 import { MainFeaturesGrid } from "../components/sections/main-features-grid";
+import ChatBot from "../components/chatbot/chatbot";
 
 export default function Homepage() {
   return (
@@ -16,6 +17,7 @@ export default function Homepage() {
         </Container>
       </div>
       <Container>
+        <ChatBot />
         <Clients />
       </Container>
       <div
